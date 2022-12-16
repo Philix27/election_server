@@ -9,4 +9,8 @@ export class AppController {
   getHello(): string {
     return this.appService.getHello();
   }
+  @Get('/agent')
+  getAgent(): any {
+    return { name: 'Abello Kings', msg: 'Hello World' };
+  }
 }
