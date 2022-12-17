@@ -16,6 +16,16 @@
     "noImplicitAny": false,
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
-    "noFallthroughCasesInSwitch": false
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@SituationRoom/libs": ["libs/"],
+      "@SituationRoom/libs/*": ["libs/*"],
+      "@SituationRoom/users": ["src/users/"],
+      "@SituationRoom/users/*": ["src/users/*"],
+      "@SituationRoom/agents": ["src/agents/"],
+      "@SituationRoom/agents/*": ["src/agents/*"],
+      "@SituationRoom/analytics": ["src/analytics/"],
+      "@SituationRoom/analytics/*": ["src/analytics/*"]
+    }
   }
 }
