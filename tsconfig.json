@@ -20,8 +20,8 @@
     "paths": {
       "@SituationRoom/libs": ["libs/"],
       "@SituationRoom/libs/*": ["libs/*"],
-      "@SituationRoom/users": ["src/users/"],
-      "@SituationRoom/users/*": ["src/users/*"],
+      "@SituationRoom/user": ["src/user/"],
+      "@SituationRoom/user/*": ["src/user/*"],
       "@SituationRoom/agents": ["src/agents/"],
       "@SituationRoom/agents/*": ["src/agents/*"],
       "@SituationRoom/analytics": ["src/analytics/"],

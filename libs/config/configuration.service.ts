@@ -5,14 +5,14 @@ import { ConfigService } from '@nestjs/config';
 export class ConfigurationService {
   constructor(private configService: ConfigService) {}
 
-  getvalue(name: string | Array<string>) {
+  getvalue(key: string | Array<string>) {
     const response = {};
-    if (typeof name === 'string') {
-      return (response[name] = this.configService.get(name));
+    if (typeof key === 'string') {
+      return this.configService.get(key);
     }
 
-    if (Array.isArray(name)) {
-      return name.map((configName) => {
+    if (Array.isArray(key)) {
+      return key.map((configName) => {
         response[configName] = this.configService.get(configName);
       });
     }
