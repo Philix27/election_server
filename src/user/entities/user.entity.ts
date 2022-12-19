@@ -48,18 +48,3 @@ export class UserEntity extends BaseEntity {
   @Column({ type: 'enum', enum: UserRoles, default: UserRoles.AGENT })
   role: userRolesType;
 }
-
-// CREATE TABLE test_agents (
-//   _id     SERIAL PRIMARY KEY,
-//  firstname     VARCHAR(50),
-//  lastname      VARCHAR(50),
-//  lga       VARCHAR(50),
-// state       VARCHAR(50),
-// ward       VARCHAR(50),
-// email       VARCHAR(50),
-// phone       VARCHAR(50),
-// address       VARCHAR(50),
-// bankName       VARCHAR(50),
-// bankAccount       VARCHAR(50)
-
-// );
